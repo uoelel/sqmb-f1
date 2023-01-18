@@ -45,10 +45,18 @@ The data frame contains 25 columns. These are the main ones:
 
 - `Value` in the data contains the acceptability ratings.
 - `Restrictor` specifies if the sentence contained a restrictor for the impersonal locative.
-  - RESTRICTED: Everywhere in Britain eats fish and chips!
-  - NON_RESTRICTED: Everywhere eats fish and chips!
+  - `0` non-restricted: *Everywhere eats fish and chips!*
+  - `1` restricted: *Everywhere in Britain eats fish and chips!*
 - `Condition` indicates which further syntactic condition the specific trial was from.
-`gold-good` and `gold-bad` are control sentences that should elicit high and low acceptability ratings respectively. The other levels of `Condition` are the experimental conditions.
+  - `gold-good` and `gold-bad` are control sentences that are expected to elicit high and low acceptability ratings respectively.
+  - The other levels of `Condition` are the experimental conditions.
+
+Mutate the values of the `Restrictor` column so that `0` becomes `non_restricted` and `1` becomes `restricted`. Can you think why this is better than using `0` and `1`?
+
+```{r}
+
+```
+
 
 # Summarise data
 
