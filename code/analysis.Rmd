@@ -1,0 +1,56 @@
+---
+title: "SQMB Formative Assessment 1"
+author: "EXAM NUMBER"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r attach-pkgs}
+# Add the necessary packages here
+
+```
+
+
+# Instructions
+
+This is a guided assessment that walks your through a basic data exploration pipeline with the main aim of producing a set of relevant plots.
+
+Follow this template to complete the assignment. Be careful with your coding style and formatting.
+
+The data for this assessment are taken from this study: https://ling.auf.net/lingbuzz/006708.
+The study looked at the "locative impersonal", i.e. *everywhere* in sentences like:
+
+1. Is eating fish and chips a regional thing? No, these days *everywhere* in Britain eats fish and chips!
+2. When Chinese food first reached Europe, people used a knife and fork, but *everywhere* in Europe eats Chinese food using chopsticks these days.
+
+The study collected acceptability ratings of those type of sentences, using an acceptability scale from 1 to 7 (a Likert scale).
+
+Skim through Sections 1-3 of the paper linked above for an overview of the study.
+
+In this assignment, you will have to make some plots of a selection of the data from the study.
+
+# Import data
+
+First import the data. Remember to attach the necessary packages in the code chunk above.
+
+```{r read-data}
+
+```
+
+The data frame contains 25 columns. These are the main ones:
+
+- `Value` in the data contains the acceptability ratings.
+- `Restrictor` specifies if the sentence contained a restrictor for the impersonal locative.
+  - RESTRICTED: Everywhere in Britain eats fish and chips!
+  - NON_RESTRICTED: Everywhere eats fish and chips!
+- `Condition` indicates which further syntactic condition the specific trial was from.
+`gold-good` and `gold-bad` are control sentences that should elicit high and low acceptability ratings respectively. The other levels of `Condition` are the experimental conditions.
+
+# Summarise data
+
+# Plot
+
