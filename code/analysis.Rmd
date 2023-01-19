@@ -60,5 +60,54 @@ Mutate the values of the `Restrictor` column so that `0` becomes `non_restricted
 
 # Summarise data
 
+Now calculate summaries measures for `Value`, `Restrictor` and `Condition` and any other column you like. Also, count occurrences of `Value` across `Restrictor` and `Condition`, separately and combined.
+
+```{r}
+
+```
+
+
 # Plot
 
+Produce the following plots. For each, write a brief description of the plot and patterns you notice in the plot.
+
+## Plot 1
+
+Create a simple plot which shows the total **counts** of each value in `Value`.
+
+```{r}
+
+```
+
+Describe the plot.
+
+## Plot 2
+
+Create a plot that shows the counts for each `Value` depending on `Restrictor`.
+
+```{r}
+
+```
+
+Describe the plot.
+
+## Plot 3
+
+Now add `Condition` to the mix with `Values` and `Restrictor`.
+You can pick any specific solution (colour/fill, faceting, etc...).
+
+```{r}
+
+```
+
+Describe the plot.
+
+## Plot 4
+
+Now create a last plot that includes any of the remaining columns in the data.
+
+```{r}
+
+```
+
+Describe the plot.
